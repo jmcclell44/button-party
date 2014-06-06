@@ -19,14 +19,13 @@
 
 
 
-
-<img src="images/starter.jpg" id ="image_spot" class="full_size" />
-
-
-
 <!-- Define Sounds Here -->
+<img src="images/starter.jpg" id ="image_spot" class="full_size" />
 <audio id ="lion" src="sounds/lion.mp3" data-image="images/dog.jpg">
+
+
 <audio id ="ambience" src="sounds/ambience.mp3" data-image="images/stuff.jpg">
+
 <audio id ="ape" src="sounds/ape.mp3">
 <audio id ="congo" src="sounds/congo.mp3">
 <audio id ="elephant" src="sounds/elephant.mp3">
@@ -40,7 +39,7 @@
  <script src="jquery.js"></script>
 <script>
 $(function(){
-
+console.log('hello');
 
 
 
@@ -49,13 +48,11 @@ console.log('hi');
 key = e.key;
 var to_play = null;
 var to_show = null;
-//Make sure you have both to_play and to_show for each spot show
 if (key == 'y'){
 	to_play = $('#lion');
 	to_show = $('#lion').attr('data-image');
 }else if( key == 'b'){
-	to_play = $('#ambience');
-	to_show = $('#ambience').attr('data-image');
+to_play = $('#ambience');
 }else if( key == 'c'){
 to_play = $('#ape');
 }else if( key == 'd'){
