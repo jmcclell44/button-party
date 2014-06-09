@@ -21,19 +21,13 @@
 
 <!-- Define Sounds Here -->
 <img src="images/starter.jpg" id ="image_spot" class="full_size" />
-<audio id ="lion" src="sounds/lion.mp3" data-image="images/dog.jpg">
+<audio id ="asianelephant" src="music/Asian Elephant.wav" data-image="images/elephant.gif">
+<audio id ="lightning" src="music/lightningUse.mp3" data-image="images/light.gif">
+<audio id ="monkeys" src="music/Monkeys.wav" data-image="images/monkeygood.gif">
+<audio id ="tiger" src="music/tiger.mp3" data-image="images/tigergood.gif">
+<audio id ="birds" src="music/birds.mp3" data-image="images/bird2.gif">
+<audio id ="frogs" src="music/frogs.mp3" data-image="images/frog2.gif">
 
-
-<audio id ="ambience" src="sounds/ambience.mp3" data-image="images/stuff.jpg">
-
-<audio id ="ape" src="sounds/ape.mp3">
-<audio id ="congo" src="sounds/congo.mp3">
-<audio id ="elephant" src="sounds/elephant.mp3">
-<audio id ="fish" src="sounds/fish.mp3">
-<audio id ="hawk" src="sounds/hawk.mp3">
-<audio id ="laugh" src="sounds/laugh.mp3">
-<audio id ="owl" src="sounds/owl.mp3">
-<audio id ="peacock" src="sounds/peacock.mp3">
 
 
  <script src="jquery.js"></script>
@@ -48,25 +42,24 @@ console.log('hi');
 key = e.key;
 var to_play = null;
 var to_show = null;
-if (key == 'y'){
-	to_play = $('#lion');
-	to_show = $('#lion').attr('data-image');
-}else if( key == 'b'){
-to_play = $('#ambience');
-}else if( key == 'c'){
-to_play = $('#ape');
-}else if( key == 'd'){
-to_play = $('#congo');
-}else if( key == 'd'){
-to_play = $('#elephant');
-}else if( key == 'e'){
-to_play = $('#fish');
-}else if( key == 'f'){
-to_play = $('#hawk');
+if (key == '2'){
+	to_play = $('#asianelephant');
+	to_show = $('#asianelephant').attr('data-image');
+}else if( key == 'u'){
+	to_play = $('#lightning');
+	to_show = $('#lightning').attr('data-image');
+}else if( key == 'o'){
+	to_play = $('#monkeys');
+	to_show = $('#monkeys').attr('data-image');
+}else if( key == 'y'){
+	to_play = $('#tiger');
+	to_show = $('#tiger').attr('data-image');
 }else if( key == 'g'){
-to_play = $('#laugh');
-}else if( key == 'h'){
-to_play = $('#owl');
+	to_play = $('#birds');
+	to_show = $('#birds').attr('data-image');
+}else if( key == 'n'){
+	to_play = $('#frogs');
+	to_show = $('#frogs').attr('data-image');
 }
 if (to_play != null){
 	
